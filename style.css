@@ -12,3 +12,7 @@
     font-size: 24;
     color: rgb(81, 126, 72);
 }
+
+#ole {
+    mix-blend-mode: multiply;
+}
