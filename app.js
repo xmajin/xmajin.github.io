@@ -1,6 +1,6 @@
-var name = prompt("Koks tava vardas?");
 
 function myName() {
+   var name = prompt("Koks tava vardas?");
    document.getElementById("name").innerHTML = name;
 }
 

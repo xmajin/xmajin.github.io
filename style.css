@@ -1,9 +1,14 @@
+.main {
+    background-color: SlateGray;
+}
+
 #meh {
-    background-color: red;
+    background-color: rgb(85, 77, 66);
     width: 600px;
     margin-left: 200px;
 }
+
 #name {
     font-size: 24;
-    color: blue;
+    color: rgb(81, 126, 72);
 }
