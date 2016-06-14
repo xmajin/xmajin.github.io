@@ -18,3 +18,13 @@
     width: 104px;
     height: 142px;
 }
+
+table {
+    border-spacing: 5px;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}

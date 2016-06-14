@@ -1,10 +1,11 @@
 
 function myName() {
    var name = prompt("Koks tava vardas?");
-   var userName = document.getElementById("name").innerHTML = name;
-   userName;
+   document.getElementById("name").innerHTML = name;
+   document.getElementById("tabName").innerHTML = name;
 }
 
 function headClick() {
-    var headClick = document.getElementById("picHead").innerHTML = "Oy don't click my head, mate!";
+    document.getElementById("picHead").innerHTML = "Oy don't click my head, mate!";
+    document.getElementById("klikYes").innerHTML = "Yes";
 }

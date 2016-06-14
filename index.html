@@ -9,11 +9,11 @@
 <body class="main">
     <div id = "meh">
         <p><ins>Tava</ins> <mark>vardas</mark> <del>buvo</del> yra: </p>
-        <p id = "name" onload="myName()"></p>
+        <p id = "name" onload="myName()"> _ </p>
     </div>
-        <script src="app.js"></script>
+
     <div>
-        <a href="index.html">HOME</a>
+        <a href="index.html">RELOAD</a>
         <button id = "name" type="button" onclick="myName()">CHANGE NAME</button>
     </div>
     <div>
@@ -22,11 +22,22 @@
             <area shape="rectangle" coords="15, 0, 80, 80" onclick="headClick()">
         </map>
     </div>
+    <div>
+        <table style="width:20%">
+            <tr>
+                <th>Name</th>
+                <th>Clicked head?</th>
+            </tr>
+            <tr>
+                <td id="tabName"></td>
+                <td id="klikYes"></td>
+            </tr>
+        </table>
+    </div>
 
 
 
-
-
+<script src="app.js"></script>
 </body>
 
 
