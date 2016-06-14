@@ -8,7 +8,7 @@
 
 <body class="main">
     <div id = "meh">
-        <p>Tava vardas yra: </p>
+        <p><ins>Tava</ins> <mark>vardas</mark> <del>buvo</del> yra: </p>
         <p id = "name" onload="myName()"></p>
     </div>
         <script src="app.js"></script>
@@ -17,7 +17,10 @@
         <button id = "name" type="button" onclick="myName()">CHANGE NAME</button>
     </div>
     <div>
-        <img id="ole" src="img1.jpg" width="104" height="142">
+        <img id="pic1" src="img1.jpg" usemap="#picHead">
+        <map name="picHead" id="picHead">
+            <area shape="rectangle" coords="15, 0, 80, 80" onclick="headClick()">
+        </map>
     </div>
 
 

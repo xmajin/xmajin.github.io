@@ -1,7 +1,10 @@
 
 function myName() {
    var name = prompt("Koks tava vardas?");
-   document.getElementById("name").innerHTML = name;
+   var userName = document.getElementById("name").innerHTML = name;
+   userName;
 }
 
-document.getElementById("name").innerHTML.onload = myName();
+function headClick() {
+    var headClick = document.getElementById("picHead").innerHTML = "Oy don't click my head, mate!";
+}
