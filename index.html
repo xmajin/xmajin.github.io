@@ -8,18 +8,21 @@
 
 <body class="main">
     <div id = "meh">
-        <p><ins>Tava</ins> <mark>vardas</mark> <del>buvo</del> yra: </p>
-        <p id = "name" onload="myName()"> _ </p>
+        <p>
+            <strong> Tavo vardas yra: </strong>
+            <span id = "name"></span>
+        </p>
     </div>
 
     <div>
         <a href="index.html">RELOAD</a>
-        <button id = "name" type="button" onclick="myName()">CHANGE NAME</button>
+        <button id = "button" type="button" onclick="myName()">NEW NAME</button>
     </div>
     <div>
-        <img id="pic1" src="img1.jpg" usemap="#picHead">
-        <map name="picHead" id="picHead">
+        <img id="pic1" src="img1.jpg" usemap="#head">
+        <map name="head">
             <area shape="rectangle" coords="15, 0, 80, 80" onclick="headClick()">
+            <span id="picHead"></span>
         </map>
     </div>
     <div>
@@ -34,7 +37,13 @@
             </tr>
         </table>
     </div>
-
+    <div>
+        <ul id="menu">
+            <li><a href="index.html">TRYS</a></li>
+            <li><a href="index.html">DU</a></li>
+            <li><a href="index.html">VIENAS</a></li>
+        </ul>
+    </div>
 
 
 <script src="app.js"></script>

@@ -3,14 +3,17 @@
 }
 
 #meh {
-    background-color: rgb(85, 77, 66);
+    font-size: 24px;
+    background-color: black;
     width: 600px;
+    height: 40px;
     margin-left: 200px;
+    color: SlateGray;
 }
 
 #name {
-    font-size: 24;
-    color: rgb(81, 126, 72);
+    font-size: 28px;
+    color: red;
 }
 
 #pic1 {
@@ -27,4 +30,24 @@ table {
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+}
+
+ul#menu {
+    padding: 0;
+}
+
+ul#menu li {
+    display: inline;
+}
+
+ul#menu li a {
+    background-color: black;
+    color: SlateGray;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    background-color: orange;
 }
