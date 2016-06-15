@@ -7,44 +7,48 @@
 </head>
 
 <body class="main">
-    <div id = "meh">
-        <p>
-            <strong> Tavo vardas yra: </strong>
-            <span id = "name"></span>
-        </p>
-    </div>
+    <div id="wrapper">
+        <div id = "meh">
+            <p>
+                <a href="index.html">RELOAD</a>
+                <button id = "button" type="button" onclick="myName()">NEW NAME</button>
+                <strong> Tavo vardas yra: </strong>
+                <span id = "name"></span>
+            </p>
+        </div>
+        <div id="body">
+            <div>
+                <img id="pic1" src="img1.jpg" usemap="#head">
+                <map name="head">
+                    <area shape="rectangle" coords="15, 0, 80, 80" onclick="headClick()">
+                    <span id="picHead"></span>
+                </map>
+            </div>
+            <div>
+                <table style="width:30%">
+                    <tr>
+                        <th>Name</th>
+                        <th>Clicked head?</th>
+                    </tr>
+                    <tr>
+                        <td id="tabName"></td>
+                        <td id="klikYes"></td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <ul id="menu">
+                    <li><a href="index.html">TRYS</a></li>
+                    <li><a href="index.html">DU</a></li>
+                    <li><a href="index.html">VIENAS</a></li>
+                </ul>
+            </div>
+        </div>
 
-    <div>
-        <a href="index.html">RELOAD</a>
-        <button id = "button" type="button" onclick="myName()">NEW NAME</button>
+        <div id="footer">
+            <p>Welcome to ZOMBO @2016</p>
+        </div>
     </div>
-    <div>
-        <img id="pic1" src="img1.jpg" usemap="#head">
-        <map name="head">
-            <area shape="rectangle" coords="15, 0, 80, 80" onclick="headClick()">
-            <span id="picHead"></span>
-        </map>
-    </div>
-    <div>
-        <table style="width:20%">
-            <tr>
-                <th>Name</th>
-                <th>Clicked head?</th>
-            </tr>
-            <tr>
-                <td id="tabName"></td>
-                <td id="klikYes"></td>
-            </tr>
-        </table>
-    </div>
-    <div>
-        <ul id="menu">
-            <li><a href="index.html">TRYS</a></li>
-            <li><a href="index.html">DU</a></li>
-            <li><a href="index.html">VIENAS</a></li>
-        </ul>
-    </div>
-
 
 <script src="app.js"></script>
 </body>

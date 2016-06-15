@@ -1,14 +1,30 @@
 .main {
     background-color: SlateGray;
 }
+#wrapper {
+
+}
 
 #meh {
     font-size: 24px;
     background-color: black;
-    width: 600px;
-    height: 40px;
-    margin-left: 200px;
     color: SlateGray;
+    text-align: center;
+    padding: 5px;
+}
+
+#body {
+    margin-left: 20px;
+    padding: 5px;
+    margin-bottom: 570px;
+}
+
+#footer {
+    background-color: black;
+    color: SlateGray;
+    clear: both;
+    text-align: center;
+    padding: 5px;
 }
 
 #name {
