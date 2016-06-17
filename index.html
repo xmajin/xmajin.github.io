@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html>
 
-<head>
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>Welcome to the infinity</title>
-</head>
+
+<meta name="keywords" content="clicker, incremental, experimental website">
+<meta name="description" content="Welcome to the infinity. Or not.">
+<meta charset="UTF-8">
+<meta name="author" content="xMajin">
 
 <body class="main">
     <div id="wrapper">
-        <div id = "meh">
+        <div id="meh">
             <p>
-                <a href="index.html">RELOAD</a>
-                <button id = "button" type="button" onclick="myName()">NEW NAME</button>
-                <strong> Tavo vardas yra: </strong>
-                <span id = "name"></span>
+                <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+                    <a href="index.html">RELOAD</a>
+                    <form id="nameForm" method="post" onsubmit="return false;">
+                        <button id = "button" type="button" onclick="myName()">NEW NAME</button>
+                        <input type="text" name="userName">
+                    </form>
+                <strong>Your Name: </strong>
+                <span id="name"></span>
             </p>
         </div>
         <div id="body">
@@ -31,22 +39,20 @@
                         <th>Clicked head?</th>
                     </tr>
                     <tr>
-                        <td id="tabName"></td>
-                        <td id="klikYes"></td>
+                        <td id="tabName">N/A</td>
+                        <td id="klikYes">N/A</td>
                     </tr>
                 </table>
             </div>
             <div>
                 <ul id="menu">
-                    <li><a href="index.html">TRYS</a></li>
-                    <li><a href="index.html">DU</a></li>
-                    <li><a href="index.html">VIENAS</a></li>
+                    <li><button type="button" onclick="resetClicks()">RESET CLICKS</button></li>
                 </ul>
             </div>
         </div>
 
         <div id="footer">
-            <p>Welcome to ZOMBO @2016</p>
+            <p>Welcome to ZOMBO &#169;2016</p>
         </div>
     </div>
 
