@@ -9,14 +9,19 @@ function myName() {
 }
 
 var click = 0;
-function headClick() {
-    click += 1;
+
+function clickUpdater(){
     document.getElementById("picHead").innerHTML = "Oy don't click my head, mate! "
      + click + " times clicked.";
     document.getElementById("klikYes").innerHTML = "Yes, " + "clicks: " + click;
 }
 
+function headClick() {
+    click += 1;
+    clickUpdater();
+}
+
 function resetClicks() {
     click = 0;
-    return click;
+    clickUpdater();
 }
