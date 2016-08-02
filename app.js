@@ -47,9 +47,21 @@ function clickerUpgrade(){
     }
 }
 
+function chronosGrade(){
+    if (chronium >= 100){
+        if (chronium >= 100){
+            document.getElementById("chronMap").src = "chronos2.png";
+        }
+        else {
+            document.getElementById("chronMap").src = "chronos.png";
+        }
+    }
+}
+
 function chronos(){
     chronium += 1;
     document.getElementById("chronum").innerHTML = "Chronos: " + chronium;
+    chronosGrade()
 }
 
 function singular(){
@@ -67,5 +79,6 @@ function sellChronos(){
         seconds += 3;
         document.getElementById("chronum").innerHTML = "Chronos: " + chronium;
         document.getElementById("seconds").innerHTML = "Seconds: " + seconds;
+        chronosGrade()
     }
 }
