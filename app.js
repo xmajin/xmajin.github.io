@@ -52,9 +52,9 @@ function chronosGrade(){
         if (chronium >= 100){
             document.getElementById("chronMap").src = "chronos2.png";
         }
-        else {
-            document.getElementById("chronMap").src = "chronos.png";
-        }
+    }
+    else {
+        document.getElementById("chronMap").src = "chronos.png";
     }
 }
 
