@@ -14,41 +14,25 @@
         <div id="header">
             <p>
                 <noscript>Sorry, your browser does not support JavaScript!</noscript>
-
-                    <a href="index.html">RELOAD</a>
-                    <form id="nameForm" method="post" onsubmit="return false;">
-                        <button id = "button" type="button" onclick="myName()">NEW NAME</button>
-                        <input type="text" name="userName" maxlength="8">
-                    </form>
-                <strong>Your Name: </strong>
-                <span id="name"></span>
+                <p id="tabName">Welcome to the infinity, Stranger!</p>
+                <p>If you find yourself stuck in a loop, better go back to where you came from ☺</p>
             </p>
         </div>
         <div id="container">
             <div id="toolmenu">
                 <div>
+                    <span id="name">Who am I?!</span></br>
                     <img id="pic1" src="img1.jpg" usemap="#head">
                     <map name="head">
                         <area shape="rectangle" coords="15, 0, 80, 80" onclick="headClick()"></br>
-                        <span id="picHead"></span>
+                        <span id="picHead">My head hurts...</span>
                     </map>
                 </div>
+                <form id="nameForm" method="post" onsubmit="return false;">
+                    <button id = "button" type="button" onclick="myName()">NEW NAME</button>
+                    <input type="text" name="userName" maxlength="8" size="14">
+                </form></br>
                 <table>
-                    <tr>
-                        <td id="timesReset" style="background-color: rgb(241, 179, 179)">Times Reset: 0</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td id="clickPow" style="background-color: rgb(0, 176, 24)">Clicker Power: 1</td>
-                    </tr>
-                    <tr>
-                        <td id="clickerCost" style="background-color: black; color: SlateBlue">Clicker Cost: 100</td>
-                    </tr>
-                    <tr>
-                    <td></td>
-                    </tr>
                     <tr>
                         <td id="chronum" style="background-color: lightBlue">Chronos: 0</td>
                     </tr>
@@ -61,26 +45,9 @@
                 </table>
             </div>
             <div id="bodyleft">
-                <div>
-                    <table>
-                        <tr>
-                            <th>Name</th>
-                            <th>Clicked head?</th>
-                        </tr>
-                        <tr>
-                            <td id="tabName">N/A</td>
-                            <td id="klikYes">N/A</td>
-                        </tr>
-                    </table>
-                </div>
-                <div>
-                    <ul id="menu">
-                        <li><button type="button" onclick="resetClicks()">RESET CLICKS</button></li>
-                        <li><button type="button" onclick="clickerUpgrade()" >UPGRADE CLICKER</button></li>
-                    </ul>
-                    <table>
-                    </table>
-                </div></br>
+                
+            </div>
+            <div id="bodyright">
                 <div>
                     <img id="chronMap" src="chronos.png" usemap="#chron">
                     <map name="chron">
@@ -95,9 +62,6 @@
                     <li><button type="button" onclick="sellChronos()">Sell 1 Chronos</button></li>
                     <li><button type="button" onclick="singular()">Buy 1 Singularity</button></li>
                 </ul>
-            </div>
-            <div id="bodyright">
-
             </div>
         </div>
         <div id="footer">
