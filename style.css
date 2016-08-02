@@ -51,6 +51,10 @@
     mix-blend-mode: multiply;
 }
 
+#singularity {
+    mix-blend-mode: multiply;
+}
+
 table {
     border-spacing: 5px;
     text-align: left;

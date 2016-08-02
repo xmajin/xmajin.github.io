@@ -12,6 +12,9 @@ var click = 0;
 var timesReset = 0;
 var clickerPow = 1;
 var clickerCost = 100;
+var chronium = 0;
+var seconds = 0;
+var singularity = 0;
 
 function clickUpdater(){
     document.getElementById("picHead").innerHTML = "Oy don't click my head, mate! "
@@ -44,10 +47,25 @@ function clickerUpgrade(){
     }
 }
 
-var chronos = 0;
-var seconds = 0;
-
 function chronos(){
-    chronos += 1;
-    document.getElementById("chronum").innerHTML = "Chronos: " + chronos;
+    chronium += 1;
+    document.getElementById("chronum").innerHTML = "Chronos: " + chronium;
+}
+
+function singular(){
+    if (seconds >= 60){
+        seconds -= 60;
+        singularity += 1;
+        document.getElementById("seconds").innerHTML = "Seconds: " + seconds;
+        document.getElementById("singular").innerHTML = "Singularities: " + singularity;
+    }
+}
+
+function sellChronos(){
+    if (chronium > 0){
+        chronium -= 1;
+        seconds += 3;
+        document.getElementById("chronum").innerHTML = "Chronos: " + chronium;
+        document.getElementById("seconds").innerHTML = "Seconds: " + seconds;
+    }
 }
