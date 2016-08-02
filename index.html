@@ -18,7 +18,7 @@
                     <a href="index.html">RELOAD</a>
                     <form id="nameForm" method="post" onsubmit="return false;">
                         <button id = "button" type="button" onclick="myName()">NEW NAME</button>
-                        <input type="text" name="userName">
+                        <input type="text" name="userName" maxlength="8">
                     </form>
                 <strong>Your Name: </strong>
                 <span id="name"></span>
@@ -58,7 +58,17 @@
                         <td></td>
                         <td id="clickerCost" style="background-color: black; color: SlateBlue">Clicker Cost: 100</td>
                     </tr>
+                    <tr>
+                        <td id="chronum" style="background-color: lightBlue">Chronos: 0</td>
+                        <td id="seconds" style="background-color: yellow">Seconds: 0</td>
+                    </tr>
                 </table>
+            </div></br>
+            <div>
+                <img id="chron" src="chronos.png" usemap="#chron">
+                <map name="chron">
+                    <area shape="poly" coords="66,41,46,45,29,57,17,74,13,94,17,114,29,131,46,143,66,147,86,143,103,131,115,114,119,94,115,74,103,57,86,45" onclick="chronos()">
+                </map>
             </div>
         </div>
 

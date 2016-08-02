@@ -15,16 +15,16 @@ var clickerCost = 100;
 
 function clickUpdater(){
     document.getElementById("picHead").innerHTML = "Oy don't click my head, mate! "
-     + click + " times clicked.";
+     + click.toFixed() + " times clicked.";
     document.getElementById("klikYes").innerHTML = "Yes, " + "clicks: " + click.toFixed();
 }
 
-function headClick() {
+function headClick(){
     click += parseFloat(clickerPow);
     clickUpdater();
 }
 
-function resetClicks() {
+function resetClicks(){
     click = 0;
     timesReset += 1;
     document.getElementById("timesReset").innerHTML = "Times Reset: " + timesReset;
@@ -42,4 +42,12 @@ function clickerUpgrade(){
         document.getElementById("clickerCost").innerHTML = "Clicker Cost: " + clickerCost;
         clickUpdater();
     }
+}
+
+var chronos = 0;
+var seconds = 0;
+
+function chronos(){
+    chronos += 1;
+    document.getElementById("chronum").innerHTML = "Chronos: " + chronos;
 }

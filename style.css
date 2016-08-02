@@ -47,6 +47,10 @@
     height: 142px;
 }
 
+#chron {
+    mix-blend-mode: multiply;
+}
+
 table {
     border-spacing: 5px;
     text-align: left;
