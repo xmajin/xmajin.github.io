@@ -11,21 +11,40 @@
 }
 
 #wrapper {
-
+    display: block;
 }
 
-#meh {
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#toolmenu {
+    width: 10%;
+}
+
+#bodyright {
+    background-color: red;
+    width: 45%;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+}
+
+#bodyleft {
+    padding: 5px;
+    margin-bottom: 500px;
+    width: 45%;
+}
+
+#header {
     font-size: 24px;
     background-color: black;
     color: SlateGray;
     text-align: center;
     padding: 5px;
-}
-
-#body {
-    margin-left: 20px;
-    padding: 5px;
-    margin-bottom: 570px;
 }
 
 #footer {
@@ -58,6 +77,7 @@
 table {
     border-spacing: 5px;
     text-align: left;
+    width: 100%;
 }
 
 table, th, td {
