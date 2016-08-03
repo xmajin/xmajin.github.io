@@ -33,6 +33,8 @@ function checkCookie() {
 }
 
 
+// JQUERY IFRAME POPUP
+
 // FUNCTIONS MISC
 function myName() {
    var name = document.getElementById("nameForm").elements[1].value;
