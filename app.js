@@ -37,9 +37,8 @@ function checkCookie() {
 function myName() {
    var name = document.getElementById("nameForm").elements[1].value;
    if (name.length > 1){
-        document.getElementById("name").innerHTML = "I am " + name + " !!!";
-        document.getElementById("tabName").innerHTML = "Welcome to the infinity, " + name + " !";
-        document.getElementById("button").innerHTML = "CHANGE NAME";
+        setCookie("username", name);
+        checkCookie();
     }
 }
 
