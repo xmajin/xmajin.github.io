@@ -1,6 +1,6 @@
 // COOKIES // USERNAME SAVE/CHANGE/DELETE
 function setCookie(cname, cvalue){
-    document.cookie = name + "=" + value;
+    document.cookie = cname + "=" + cvalue;
 }
 
 function getCookie(cname) {
