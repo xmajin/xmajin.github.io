@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 <meta name="author" content="xMajin">
 
-<body class="main">
+<body class="main" onload="checkCookie()">
     <div id="wrapper">
         <div id="header">
             <p>
@@ -24,7 +24,8 @@
                     <span id="name">Who am I?!</span></br>
                     <img id="pic1" src="img1.jpg" usemap="#head">
                     <map name="head">
-                        <area shape="rectangle" coords="15, 0, 80, 80" onclick="headClick()"></br>
+                        <area shape="rectangle" coords="15, 0, 80, 80" onclick="headClick()"
+                        onmouseover="headHover('on')" onmouseout="headHover('off')"></br>
                         <span id="picHead">My head hurts...</span>
                     </map>
                 </div>
@@ -45,7 +46,7 @@
                 </table>
             </div>
             <div id="bodyleft">
-                
+
             </div>
             <div id="bodyright">
                 <div>
