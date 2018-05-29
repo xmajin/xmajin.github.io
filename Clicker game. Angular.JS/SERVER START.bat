@@ -1,0 +1,1 @@
+http-server "C:/Users/Tadas/Desktop/ASSETS/" -p 1337
