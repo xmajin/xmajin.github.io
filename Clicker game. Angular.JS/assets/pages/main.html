@@ -1,0 +1,51 @@
+<div id="wrapperFirst" ng-init="myCol='gray'">
+    Choose Your Human: <select ng-model="selectedPerson" ng-options="x for (x, y) in choosePerson">
+    </select>
+</br></br>
+    Write your color: <input style="background-color:{{myCol}}" ng-model="myCol">
+
+<test-directive ng-click="changeName()"></test-directive>
+    Full name:<span style="color:{{myCol}}">
+        {{ transcended }} {{ selectedPerson.firstName }} {{ selectedPerson.lastName }}</span>
+</div>
+<div id="wrapperSecond">
+        <p>Bunch of various artists from the counties:</p>
+        Search: <input type="text" ng-model="sortName"></input>
+        &emsp; Order by:
+        <button ng-click="orderCats('name')">Name</button>
+        <button ng-click="orderCats('country')">Country</button>
+        <button ng-click="orderCats('price')">Price</button></br></br>
+    <div id="tableWrapper">
+
+        <div id="tableFirst">
+        Artists from controller: <button ng-click="hideList(1)">SHOW/HIDE</button></br></br>
+        <table ng-show="showMe1">
+            <tr id="tableCat">
+                <td>NAME</td>
+                <td>COUNTRY</td>
+                <td>PRICE</td>
+            </tr>
+            <tr ng-repeat="x in nameList | filter: sortName | orderBy:orderList">
+            <td>{{ x.name }}</td>
+            <td>{{ x.country | uppercase}}</td>
+            <td> {{ x.price | currency }}</td>
+            </tr>
+        </table></br>
+        </div>
+
+        <div id="tableSecond">
+        Customers from customers.php with $http: <button ng-click="hideList(2)">SHOW/HIDE</button></br></br>
+        <table ng-show="showMe2">
+            <tr id="tableCat">
+                <td>NAME</td>
+                <td>COUNTRY</td>
+            </tr>
+            <tr ng-repeat="x in myData | filter: sortName | orderBy:orderList">
+                <td>{{ x.name }}</td>
+                <td>{{ x.country }}</td>
+            </tr>
+        </table>
+        </div>
+
+    </div>
+</div>

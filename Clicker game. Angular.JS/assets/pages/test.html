@@ -1,0 +1,13 @@
+<div ng-app="myShoppingList" ng-controller="myCtrl">
+    <ul>
+        <li ng-repeat="x in products">{{ x }}
+            <span>
+                <button ng-click="removeItem($index)">&times;</button>
+            </span>
+        </li>
+    </ul>
+
+    <input ng-model="addMe">
+    <button ng-click="addItem()">Add</button>
+    <p>{{ errortext }}</p>
+</div>

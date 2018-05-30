@@ -74,3 +74,19 @@ app.controller("timer", function($scope, $interval) {
         $scope.time = new Date().toLocaleTimeString();
     }, 1000);
 })
+
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl: "assets/pages/main.html"
+    })
+    .when("/test", {
+        templateUrl: "assets/pages/test.html"
+    })
+    .when("/credits", {
+        templateUrl: "assets/pages/credits.html"
+    })
+    .otherwise({
+        template : "<h1> 404 PAGE NOT FOUND </h1>"
+    });
+});
